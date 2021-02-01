@@ -1,13 +1,17 @@
 <?php
+
 require_once "nav.php";
 if (isset($_SESSION["username"])) {
     echo "Hello " . $_SESSION["username"];
 } else {
     echo "bad";
 }
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +19,7 @@ if (isset($_SESSION["username"])) {
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/categories.css">
 </head>
+
 <body>
     <header>
         <form action="" method="post">
@@ -28,6 +33,7 @@ if (isset($_SESSION["username"])) {
             </select>
         </form>
         <div id="ordered">
+
         </div>
         <footer>
             <?php
@@ -39,7 +45,6 @@ if (isset($_SESSION["username"])) {
             $array = mysqli_fetch_assoc($result);
 
             if ($_GET["page"] == 1) {
-                echo '<p id="limit" value="' . $_GET["page"] . '">Page' . $_GET["page"] . '</p>';
                 echo '<p id="limit" >' . $_GET["page"] . '</p>';
                 echo '<a href="categories.php?page=' . $pageup  . '">NEXT</a>';
                 echo "<br>";
@@ -49,8 +54,14 @@ if (isset($_SESSION["username"])) {
                 echo "<br>";
             } else {
                 echo '<a href="categories.php?page=' .  $pagedown . '">Previous</a>';
-                echo '<p id="limit" value="' . $_GET["page"] . '">Page' . $_GET["page"] . '</p>';
                 echo '<p id="limit" >' . $_GET["page"] . '</p>';
                 echo '<a href="categories.php?page=' . $pageup . '">NEXT</a>';
             }
             ?>
+        </footer>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="scripts/ordercat.js"></script>
+</body>
+
+</html>

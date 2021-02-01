@@ -4,7 +4,7 @@
 if (!empty($_POST['moviename'])) {
     trim($_POST['moviename']);
     $searchString = $_POST['moviename'];
-    $conn = mysqli_connect('localhost', 'root', '', 'miniproject', 3307);
+    $conn = mysqli_connect('localhost', 'root', '', 'miniproject');
     $query = "SELECT * FROM movies WHERE title LIKE '%$searchString%'";
 
     // executes query

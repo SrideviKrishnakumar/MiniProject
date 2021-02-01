@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect('localhost', 'root', '', 'miniproject', 3307);
+$conn = mysqli_connect('localhost', 'root', '', 'miniproject');
 $query = "SELECT name, COUNT(*) FROM movies JOIN categories WHERE movies.category_id=categories.id GROUP BY CATEGORIES.name ";
 $results = mysqli_query($conn, $query);
 echo '<br>';

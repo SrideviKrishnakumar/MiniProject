@@ -1,6 +1,4 @@
 <?php
-if (isset($_GET["id"])) {
-    echo "good";
 
 if (isset(($_POST['submit']))) {
 
@@ -58,33 +56,29 @@ if (isset(($_POST['submit']))) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>ADD OR MODIFY MOVIE</h1>
     <br>
     <form action="" method="post">
         <label>Title</label>
-        <input type="text" placeholder="<?= $title ?>">
         <input type="text" placeholder="" name='title'>
         <br>
         <label>Release Year</label>
-        <input type="text">
         <input type="text" name='year'>
         <br>
         <label>Description</label>
-        <input type="textarea">
         <input type="textarea" name="description">
         <br>
         <label for="">PosterPath</label>
-        <input type="text">
         <input type="text" name='poster'>
         <br>
-        <label for="">Category</label>
-        <input type="text" id='category'>
         <label for="">Movie Path</label>
         <input type="text" name="moviepath" id="" value="">
         <select name="category" id="catselect">
@@ -93,7 +87,6 @@ if (isset(($_POST['submit']))) {
 
         <input type="submit" value='Append the movie' name='submit'>
 
-        ?>
 
 
     </form>
@@ -129,4 +122,5 @@ if (isset(($_POST['submit']))) {
         });
     </script>
 </body>
+
 </html>

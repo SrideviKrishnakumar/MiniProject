@@ -25,6 +25,9 @@ if ($conn) {
                 $foundb = true;
             }
         }
+
+
+
         if (!$founde) {
             $error = "WRONG EMAIL";
         } else if (!$foundp) {
@@ -32,6 +35,7 @@ if ($conn) {
         } else if (!$foundb) {
             $error = "PASSWORD AND EMAIL DONT MATCH";
         } else {
+
             //var_dump($_SESSION);
             $_SESSION["username"] = "";
             $_SESSION['last_activity'] = strtotime("now");
@@ -47,26 +51,20 @@ if ($conn) {
 } else {
     echo "<h1>NOT CONNECTED</h1>";
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .alert {
-            color: red;
-        }
     <link rel="stylesheet" href="styles/logister.css">
     </style>
 </head>
 
 <body>
-    <h1>LOG IN</h1>
-    <h1 class="alert"><?= $error ?></h1>
-    <form action="" method="post">
-        <input type="email" name="email" value="<?= $email ?>" placeholder="Email">
     <h3> </h3>
     <div class="box">
         <h1>LOG IN</h1>
@@ -79,19 +77,11 @@ if ($conn) {
             <input type="submit" name="login" value="LOG IN">
         </form>
         <br>
-        <input type="password" name="pass" value="<?= $pass ?>" placeholder="Password">
         <br>
-        <input type="submit" name="login" value="LOG IN">
-    </form>
-    <br>
-    <br>
-    <form action="register.php" method="post">
-        <input type="submit" value="Register">
-    </form>
         <form action="register.php" method="post">
             <input type="submit" value="Register">
         </form>
     </div>
 </body>
 
-</html> 
+</html>
