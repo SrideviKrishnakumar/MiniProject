@@ -24,9 +24,9 @@ require_once("nav.php");
                     subscription-based streaming service which offers online streaming of a library of films and television series, including those produced in-house. As of Nov 2020, TimePass had over 193 million paid subscriptions worldwide, including 73 million in the United States. It is available worldwide except in the following: mainland China, Syria, North Korea, and Crimea. The company also has offices in France, the United Kingdom, Brazil, the Netherlands, India, Japan, and South Korea.
                     TimePass is a member of the Motion Picture Association. Today, the company produces and distributes content from countries all over the globe.</p>
             </article>
-            <article id='list'>
+            
                 <input type="text" name="search" id='search' placeholder="SEARCH FOR A MOVIE HERE" class="size">
-            </article>
+        
             <div id='result'></div>
 
             <div id='result1'></div>

@@ -45,10 +45,10 @@ p {
 }
 
 .size {
-  width: 1000px;
-  height: 100px;
+  width: 600px;
+  height: 70px;
   margin-top: 70px;
-  margin-left: 150px;
+  margin-left: 30px;
   background-color: wheat;
   margin-bottom: 30px;
 }
@@ -91,6 +91,7 @@ img {
   background-color: burlywood;
   border-radius: 10%;
 }
+
 
 /*#cat {
 
