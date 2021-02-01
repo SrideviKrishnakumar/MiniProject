@@ -18,9 +18,6 @@ if (isset($_POST['modifycat'])) {
     header("Location: modifycat.php");
 }
 
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

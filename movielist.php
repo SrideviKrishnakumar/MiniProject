@@ -1,7 +1,7 @@
 <?php
 
 
-$conn = mysqli_connect('localhost', 'root', '', 'miniproject', 3307);
+$conn = mysqli_connect('localhost', 'root', '', 'miniproject');
 $query = "SELECT * FROM movies ORDER BY id DESC LIMIT 4";
 
 // executes query
