@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: wheat;
+  font-family: "Lobster", cursive;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+}
+main {
+  width: 80%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: larger;
+  font-weight: 500px;
+}
+p {
+  font-size: large;
+}
+.box {
+  width: 550px;
+  height: 550px;
+  /*background-image: url("../images/bg.jpg");*/
+  margin: auto;
+  background-color: black;
+  border: 2px solid wheat;
+  border-radius: 30px;
+  padding-top: 40px;
+}
+form {
+  text-align: center;
+}
+h3 {
+  margin: 130px;
+}

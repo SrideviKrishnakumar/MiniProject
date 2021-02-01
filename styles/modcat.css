@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+}
+header {
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+}
+p {
+  color: wheat;
+}
+form {
+  margin: 20px;
+}

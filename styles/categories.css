@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  font-family: "Lobster", cursive;
+}
+header {
+  border-bottom: 1px white solid;
+  padding-bottom: 10px;
+}
+form {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-bottom: 2px double rgb(255, 255, 255);
+}
+.clone {
+  display: flex;
+  justify-content: space-evenly;
+}
+img {
+  width: 100px;
+}
+.clone {
+  border: 2px solid wheat;
+  padding: 5px;
+  margin: 30px 200px;
+}
+#one {
+  padding-left: 30px;
+}
+#two {
+  padding-left: 30px;
+}
+#three {
+  padding-left: 30px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}

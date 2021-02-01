@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: wheat;
+  font-family: "Lobster", cursive;
+  /*background-image: url("../images/bg.jpg");*/
+}
+main {
+  width: 80%;
+  margin: auto;
+}
+
+.not_visible {
+  /*display: none;*/
+}
+.box {
+  width: 100px;
+  height: 60px;
+  /*background-color: powderblue;
+   border-radius: 10px;
+  border: 2px solid;*/
+  margin-right: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav li {
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: wheat;
+}
+h1 {
+  text-align: center;
+  font-size: larger;
+  font-weight: 500px;
+}
+p {
+  font-size: large;
+}
+
+.size {
+  width: 1000px;
+  height: 100px;
+  margin-top: 70px;
+  margin-left: 150px;
+  background-color: wheat;
+  margin-bottom: 30px;
+}
+img {
+  width: 250px;
+}
+#result {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  border: blanchedalmond 2px solid;
+  margin-bottom: 30px;
+}
+.movie {
+  width: 270px;
+  margin: 10px;
+  border: wheat 2px solid;
+  text-align: center;
+  padding-top: 10px;
+}
+#result1 {
+  height: 50px;
+  margin-bottom: 30px;
+  color: blue;
+  font-size: larger;
+}
+#result1,
+#result2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.movie1 img {
+  width: 100px;
+}
+#lastmovie {
+  display: block;
+  width: 120px;
+}
+#addmovie {
+  background-color: burlywood;
+  border-radius: 10%;
+}
+
+/*#cat {
+
+  display: flex;
+  justify-content: space-evenly;
+}*/
