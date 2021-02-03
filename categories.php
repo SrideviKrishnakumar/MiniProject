@@ -26,7 +26,7 @@ if (isset($_SESSION["username"])) {
             <select name="categories" id="cat">
                 <option value="%">All Categories</option>
             </select>
-            <input type="submit" id="ordercat" value="Search with specifications">
+            <input type="submit" id="ordercat1" value="Search with specifications">
             <select name="sort" id="sort">
                 <option value="ASC"> Order by Ascending</option>
                 <option value="DESC">Order by Descending</option>
